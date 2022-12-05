@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İndex-3</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        text-decoration: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+    body{
+        margin:0;
+        padding:0;
+        background-color: #0b242e;
+    }
+    header{
+        background: #264653;
+        height: 90px;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    nav{
+        height: 50%;   
+        z-index: 9999;
+    }
+    nav ul{
+        float: right;
+
+    }
+     nav li{
+        display: inline-block;
+        align-items: center;
+    }
+    .logo{
+        color:white;
+        font-size: 30px;
+        margin-left:15px;                
+    }
+    
+    
+    nav ul li{
+        display: inline-block;
+        flex-direction: row;
+        line-height: 30px;
+        font-size: 18px;
+    }
+    li:hover ul a:hover{
+        text-shadow: 1px 5px 8px black;
+		color: white;
+        transition: 0.35s;
+    }
+    nav ul li a{
+        text-decoration: none;
+        text-align: center;
+        color:whitesmoke;
+        display: block;
+        transition: 0.15s;
+        padding:10px 45px;
+        text-shadow: 5px 5px 5px black;
+        font-weight:600;
+    }
+    li ul li{
+        display: block;
+        float:none;
+        margin-left:-1px;
+    }
+    .hidden{
+        display:none;
+    }
+    nav ul li a:hover+ .hidden,.hidden:hover{
+        display:block;
+        text-shadow: 2px 2px 5px black;
+        background: #264653;
+        z-index:9999;
+    }
+    li a:hover{
+        background-color:#2a9d8f;
+        transition: 0.15s;
+        border-radius: 5px
+    }
+    #sign-button a{
+        padding:20px;
+        
+    }
+    .log-buttons{
+        height:100%;
+        overflow: auto;
+        display:flex;
+        align-items: center;
+        margin-right:45px;
+        margin-left:-15px;
+    }
+    #sign,#login {
+        min-width: 70px;
+        height: 50px;
+        font-size:15px;
+        border-radius: 10px;
+        border:none;
+        margin:5px;
+        text-decoration: none;
+        color:white;
+    }
+    #sign{
+        background-color: orangered;
+    }
+    #login{
+        background-color: #2A9D8F;
+    }
+    #sign a, #login a {
+        color:white;
+    }   
+    #sign:hover, #login:hover{
+        text-shadow:1px 1px 7px wheat;
+        font-weight: bolder;
+        transition: 0.15s;
+    }
+    .slide-photos{
+        position: relative;
+        width:110%;
+        height:auto;
+        display: inline;
+        z-index:1;
+        border-radius: 3px;
+        
+    }
+    .slides{
+        position: relative;
+        margin-top: 30px;
+        margin-right: 150px;
+        margin-left: 50px;
+        z-index: 2;
+        box-shadow: 0px 25px 50px black;
+        
+    }
+    #slide-title{
+        position:absolute;
+        top: 20%;
+        left: 310px;
+        color:white;
+        font-size:45px;
+        font-weight:bold;
+        z-index: 2;
+        text-shadow:10px 12px 4px black;
+        border-bottom:1px rgba(0, 0, 0, 1.5)
+    }
+
+</style>
+<body>
+   <header>
+    <label class="logo" for="">LOGO</label>
+   <nav>
+   
+   <ul>
+    <li><a href="#">FILMS</a></li>
+    <li><a href="#">LISTS</a></li>
+    <li><a href="#">CATEGORY</a>
+    <ul class = "hidden">
+        <li><a href="#">Aksiyon</a></li>
+        <li><a href="#">Gerilim</a></li>
+        <li><a href="#">Korku</a></li>
+        <li><a href="#">Festival</a></li>
+        <li><a href="#">Dram</a></li>
+        <li><a href="#">Animasyon</a></li>
+        <li><a href="#">Komedi</a></li>
+    </ul>
+</li>
+    <li><a href="#">JOURNAL</a></li>
+   </ul>
+</nav>
+<div class = "log-buttons">
+    <div><button id="sign"><a href="">Sign in</a></button></div>
+    <div><button id ="login"><a href="">Login</a></button></div>  
+</div>
+</header>
+<main>
+    
+      <div class = "slides">
+        <img src="main-slide.jpg" class = "slide-photos" alt="">
+        <div id = "slide-title">10000'den Fazla Film ve Dizi
+    </div>
+    </div>
+
+</main>
+</body>
+</html>
