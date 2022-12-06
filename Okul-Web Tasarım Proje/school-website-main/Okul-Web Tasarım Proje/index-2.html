@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Menu Example</title>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        background-color:rgb(7, 7, 83);
+        display: flex;
+        align-items: center;
+        height: 90px;
+        vertical-align:middle;
+        
+    }
+    .logo{
+        margin-left: 1em;
+        height: 80px;
+        border-radius: 55px;
+    }
+    .navbar{
+        background-color:rgb(7, 7, 83);
+        text-align: center;
+        display: flex;
+    flex-direction: row;
+
+        
+    
+    }
+ul {
+    list-style: none;
+    vertical-align: middle;
+    line-height: 50px;
+   
+    
+}
+li {
+    display: block;
+    margin: 1px;
+    
+}
+li a {
+    display: block;
+    background-color:rgb(7, 7, 83);
+    min-width: 140px;
+    color: aliceblue;
+    list-style: none;
+	text-decoration: none;
+    
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+	li a:hover{
+        display:inline-block;
+		background: #4AB797;
+        border-radius: 13px;
+        line-height: 35px;
+	}
+	
+	li:hover ul a{
+		background:#A89F9F;
+		color: black;
+		
+		
+	}
+	li:hover ul a:hover{
+		background: #4AB797;
+		color: aliceblue;
+	}
+	li ul li{
+		display: block;
+		float: none;
+	}
+	.hidden{
+		display: none;
+	}
+	/*li ul{
+		display: none;
+	}*/
+	ul li a:hover+ .hidden,.hidden:hover{
+		display: block;
+		
+	}
+	li:hover a{
+		background: #4AB797;
+		color: aliceblue;
+	}
+	
+</style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="fılmletter.png" alt="">
+        <div class="navbar" >
+<ul>
+  <li> <a href="#">Homepage</a> </li>
+  <li> <a href="#">About us</a> </li>
+  <li> <a href="#">Courses</a>
+    <ul class="hidden">
+      <li><a href="#">MISY2213</a></li>
+      <li><a href="#">MISY1111</a></li>
+      <li><a href="#">MISY1108</a></li>
+    </ul>
+  </li>
+  <li> <a href="#">Articles</a> </li>
+  <li> <a href="#">Contact</a> </li>
+</ul>
+</div>
+</header>
+</body>
+</html>
